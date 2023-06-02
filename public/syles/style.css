@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    background-color: #1C1C1C;
+    color: white;
+    padding: 0px;
+    margin: 0;
+}
+
+#sesonPrincipal{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12em;
+}
+.explore{
+    font-family: "Courgette", Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+.explore::after{
+    content: "Inexploravel";
+    color: #006400;
+    font-family: "Courgette", Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+.capa{
+    width: 120px;
+    border-radius: 15px;
+    margin-right: 5em;
+}
+.produto{
+    display: flex;
+    margin-bottom: 5em;
+    
+}
+.bodyproduto{
+    width: 100%;
+    max-width: 700px;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+    
+}
+#produtos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.buttonComprar{
+    background-color: #1E1E1E;
+    border: none;
+    color: white;
+    width: 80%;
+    max-width: 176px;
+    height: 36px;
+    border-radius: 25px;
+    border: solid 2px #202020;
+}
+.icon{
+    width: 30px;
+    margin-right: 20px;
+}
+#dicas{
+    display: flex;
+    justify-content: center;
+    margin-top: 8em;
+    margin-bottom: 17em;
+}
+.dica{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 300px;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+.dica:nth-child(2){
+    margin-left: 25em;
+}
+.dicaHeader{
+    display: flex;
+}
+@media(max-width:700px){
+    .buttonComprar{
+        margin-top: 20px;
+    }
+    .produto{
+        flex-direction: column;
+        align-items: center;
+    }
+    .capa{
+        width: 150px;
+        margin-right: 0em;
+    }
+    .bodyproduto{
+        margin-bottom: 8em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dica:nth-child(1){
+        margin-bottom: 4em;
+    }
+    #dicas{
+        margin-top: 0em;
+        
+        display: flex;
+        justify-content: none;
+        align-items: center;
+        flex-direction: column;
+    }
+    .dica:nth-child(2){
+        margin-left: 0em;
+    }
+}
+h5{
+    margin-bottom: 10px;
+}
+footer{
+    background-color: #00000013;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    flex-direction: column;
+    font-family: "Courgette", Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
