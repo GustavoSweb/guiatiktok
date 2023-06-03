@@ -6,6 +6,45 @@ body{
     padding: 0px;
     margin: 0;
 }
+.top{
+    transform: translateY(0) !important;
+    opacity: 100% !important;
+    
+}
+.opacity{
+    opacity: 0% !important;
+}
+#arrow{
+    animation: arrow 1s alternate infinite;
+
+}
+@keyframes arrow{
+    to{
+        transform: translateY(0px);
+    }
+    from{
+        transform: translateY(10px);
+    }
+}
+.topAni{
+    transition: transform opacity 0.4s ease;
+    transform: translateY(50px);
+    opacity: 40%;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;  
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #3b3b3b;    
+    border-radius: 20px;       
+
+  }
 #iconprincipal{
     animation: roda 1.5s infinite alternate ease-in-out;
 }
@@ -157,7 +196,7 @@ body{
 }
 .dica:hover{
     box-shadow: 0px 0px 6px 1px #00000017;
-    transform: scale(1.1);
+    transform: scale(1.1) !important;
 }
 .dica:nth-child(2){
     margin-left: 25em;
